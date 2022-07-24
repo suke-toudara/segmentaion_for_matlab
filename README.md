@@ -1,6 +1,6 @@
 # segmentaion_for_matlab
 
-*Matlab上でsegmentaionするためのコード　*
+Matlab上でsegmentaionするためのコード　
 
 train.m-学習用
 
