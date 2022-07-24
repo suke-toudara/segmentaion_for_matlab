@@ -1,0 +1,2 @@
+# segmentaion_for_matlab
+Matlab上でsegmentaionするためのコード
