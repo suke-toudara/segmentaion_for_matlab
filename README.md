@@ -1,6 +1,7 @@
 # segmentaion_for_matlab
 
-## Matlab上でsegmentaionするためのコード　
+## segmentaion for Matlab
+
 
 - train.m-学習用
 
@@ -18,4 +19,4 @@ matlabとpytorchでは使用するラベル画像のデータ形式が違うの�
 * matlab2022a
 
 
-@autor yoshida keisuke
+
