@@ -17,18 +17,18 @@ matlabとpytorchでは使用するラベル画像のデータ形式が違うの�
 
 また元画像はプログラム内でサイズを変更できるので入力サイズは何のサイズでもいいが、
 ラベルデータのプログラム内での一斉リサイズがまだできていないのでjson_to_for_matlab_labeldata.py
-内の以下の部分でモデルにあったサイズのラベル画像を生成する必要がある。
+内の以下の部分でモデルにあったサイズのラベル画像を生成する必要がある。(80行目から)
 *今後修正予定
 
-'''
+```
 
-80  new_image = Image.fromarray(image_array, mode="P")
-81   new_image.putpalette(origin_color_palette)
-82   new_image=new_image.convert("RGB")
-83   new_image=new_image.resize((960,540))   #該当コード　ここの（960,540）をモデルの入力サイズに合わせる必要がある。
-84   new_image.save(str(out_dir_path.joinpath(json_file_path.name).with_suffix(".png")))
+ 　new_image = Image.fromarray(image_array, mode="P")
+ 　new_image.putpalette(origin_color_palette)
+ 　new_image=new_image.convert("RGB")
+ 　new_image=new_image.resize((960,540))   #該当コード　ここの（960,540）をモデルの入力サイズに合わせる必要がある。
+　 new_image.save(str(out_dir_path.joinpath(json_file_path.name).with_suffix(".png")))
     
-'''
+```
 
 
 ## 使用例
