@@ -9,11 +9,19 @@
 
 - json_to_label.py-jsonデータかラベルデータを作成するscript(pytorch用)
 
-- json_to_for_matlab_labeldata.pyjsonデータかラベルデータを作成するscript(matlab用)
+- json_to_for_matlab_labeldata.py-jsonデータかラベルデータを作成するscript(matlab用)
 
 
 注意
 matlabとpytorchでは使用するラベル画像のデータ形式が違うのでそれぞれに合った変換用pythonスクリプトを使用してください
+また元画像はプログラム内でサイズを変更できるので入力サイズは何のサイズでもいいが、
+ラベルデータのプログラム内での一斉リサイズがまだできていないのでjson_to_for_matlab_labeldata.py
+内の以下の部分でモデルにあったサイズのラベル画像を生成する必要がある。
+
+'''
+
+
+'''
 
 
 ## 使用例
