@@ -1,39 +1,3 @@
-# from dataclasses import dataclass
-
-# from PIL import Image
-# import glob 
-# import os
-
-# """
-# matlabの学習用のラベルデータがindexカラーで渡そうとするとエラーを
-# はくのでRGBに変更する必要があるので、以下のコードで変換
-
-# """
-# # 動作確認 ファイルパスのリストを取得
-# rootpath="./data2"
-# #rootpath = "./teach_data"
-
-# def make_datapath_list(rootpath):
-#     data_list=glob.glob(rootpath+'/*.png')
-#     file_names = []
-#     for i in range(len(data_list)):
-#         a,b = os.path.split(data_list[i])
-#         file_names.append(b)
-#     return data_list,file_names
-
-
-
-# path,file_name=make_datapath_list(rootpath)
-
-# for i in range(len(path)):
-#     data=path[i]
-#     name=file_name[i]
-#     img = Image.open(data)
-#     img1=img.resize((960,540))
-#     print(i)
-#     img1.save("./output_folder/"+name)  # 画像を保存
-
-
 from pathlib import Path
 import subprocess
 import shutil
